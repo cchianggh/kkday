@@ -1,0 +1,141 @@
+#mwt_mwt_slider_scroll0 , #mwt_mwt_slider_scroll1
+	{
+	top: 0;
+	right:-360px;
+	width:360px;
+	position:fixed;
+	z-index:997;
+	/*padding-top:30px;*/
+	
+	}
+
+#mwt_mwt_slider_scroll2 
+	{
+	right:400px;
+	left:400px;
+	width: 100% - 800px;
+	top:-360px;
+	height:360px;
+	position:fixed;
+	z-index:996;
+	margin: auto;
+	}
+			
+#mwt_slider_content0 , #mwt_slider_content1
+	{
+	/*background:#3c5a98;*/
+	background:#fff;
+	text-align:center;
+	padding-top:0;
+	cursor:pointer; 
+	overflow-y:scroll;
+	}
+
+#mwt_slider_content0 a, #mwt_slider_content1 a
+	{
+		font-weight: 600;
+		color: #555;
+		font-size: 18px;
+	}
+
+#mwt_slider_content2
+	{
+	/*background:#3c5a98;*/
+	height:360px;
+	width: 100% - 800px;
+	background:#fff;
+	text-align:center;
+	padding-right:20px;
+	cursor:pointer; 
+	}
+	
+.menu-slider-right{
+		list-style-type:none;
+		text-align: left;
+		line-height: 40px;	
+				
+	}
+
+.menu-slider-right h3{						
+		font-weight: 600;
+		color: #555;
+		font-size: 14px;
+		background-color: #ccc;
+		width: 210px;
+		text-align: left;
+		margin-left: 28px;			
+	}
+
+.menu-slider-right a{
+		text-decoration: none;
+		font-family:monospace;
+		font-weight: 525;
+		font-size: 18px;
+		color: #555;
+	}
+
+.menu-slider-right ol hr{
+		color: #888;
+	}
+#menu{
+		cursor:pointer; 
+	}
+
+#block-layer{
+		position: absolute; 
+		top:0; 
+		left:0; 
+		height:100%; 
+		width:100%; 
+		background-color:gray; 
+		z-index:998; 
+		visibility: hidden; 
+		/*display: none;*/
+		opacity:0.8;
+	}
+	
+#register
+	{
+	   position: absolute; 
+		top: 5%; 
+		left: 25%;
+		bottom: 10%; 
+		width: 50%; 
+		height: 85%; 
+		background-color:white; 
+		z-index:999; 
+		visibility: hidden;
+		/*display: none;*/
+		border-radius: 10px;
+	} 
+#register hr
+	{	
+		width: 90%;
+		margin:auto;
+		clear: both;
+		margin-bottom: 15px;
+
+	}
+
+#register h2
+	{	
+		font-size: 36px;
+		float: left;
+		color:lightblue;
+		text-align: center;
+		width: 78%;
+		height: 50px;
+		margin-top: 10px;
+		margin-bottom: 15px;
+
+	}
+
+#register i
+	{	
+		width: 10%;
+		float: right;
+		margin-right: 20px;
+		margin-top: 20px;			 			 
+	}
+							
+		
