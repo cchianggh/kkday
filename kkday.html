@@ -1,3 +1,8 @@
+<?php 
+	require_once("connDB.php");	
+	$sql1 = "SELECT * FROM `members`" ;	
+	$result1 = mysqli_query($conn,$sql1);	
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -7,7 +12,7 @@
 	<link rel="stylesheet" href="css/j_head-style.css">
 	<link rel="stylesheet" href="css/j_welcome.css">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	
 	<link rel="stylesheet" href="css/style.css">
 	<link rel="stylesheet" href="css/table.css">
 	<link rel="stylesheet" href="css/mobile.css">
@@ -17,11 +22,16 @@
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 	<script src="js/j_slide.js"></script>
 	<script src="js/j_block.js"></script>
+
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
 	<script src="js/j_script.js"></script>
+
 	<script src="js/main.js"></script>
 	<script src="js/slick.min.js"></script>
 	<script type='text/javascript' src='https://code.jquery.com/jquery-1.9.1.min.js'></script>
-		
+	<script src="js/j_check.js"></script>	
 <!--*********************************************************************-->
 
 <!--*********************************************************************-->
@@ -29,7 +39,67 @@
 </head>
 <body id="body">	
 	<div id="block-layer"></div>
-	<div id="register"><h2>登入kkday</h2><i id="cross3" class="fa fa-times" style="font-size:34px;color:#555;" onclick="back()"></i><hr><input type="button" value="按這裡關閉遮蔽" onclick="back()"></div>
+	<div id="register"><h2>登入kkday</h2><i id="cross3" class="fa fa-times" style="font-size:34px;color:#555;" onclick="back()"></i>
+	<hr>
+		<div class="j_reg_logo" ><image class="j_fb" src="images/fb100.png"></image>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<image class="j_gg" src="images/gg100.png"></image>
+		</div> 
+		<div style="text-align: center; height: 40px; line-height: 40px;">or
+		</div>
+		<div class="j_kk_login"><h3>KKday會員帳號登入</h3>
+		</div>
+		<!--<form action="register.php" method="post">-->
+		<form action="verify.php" method="post">
+		<input id="j_login_mail" class="j_login_mail" name="mail" type="text" placeholder="電子郵件信箱"><br>
+		<input id="j_login_pw" class="j_login_pw" name="pw" type="text" placeholder="密碼"><br>
+		<input class="j_submit" type="submit" value="登入" onclick="back()">		
+		</form>
+		<div id="j_forgot"><span id="forgot_span" onclick="show1()">忘記密碼?</span> │ <span class="j_register"> <a href="register.php">免費註冊</a></span>
+		<div id="partner">
+			企業會員登入
+		</div>
+		</div>
+	</div>
+<!-- ************************************************* -->	
+	<div id="block-layer1"></div>
+	<div id="j_forgot_pw"><h2>忘記密碼</h2><a href="kkday.html"> <i id="cross4" class="fa fa-times" style="font-size:34px;color:#555;"></i></a>
+	<hr>
+		<div class="j_reg_logo" ><image class="j_fb" src="images/fb100.png"></image>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<image class="j_gg" src="images/gg100.png"></image>
+		</div> 
+		<div style="text-align: center; height: 80px; line-height: 80px;">or
+		</div>
+		<div class="j_reset_pw"><h3>重設KKday會員密碼</h3>
+		</div>
+		<!-- 
+		<form action="verify.php" method="post">-->
+		<form >
+		<input id="j_login_mail1" class="j_login_mail" name="mail1" type="text" placeholder="電子郵件信箱"><br>
+		<p id="j_result"></p>
+		<script type="text/javascript">
+			document.getElementById("j_submit1").onclick = function(){
+			    //console.log("YYYYYYYYY")
+			    let j_login_mail1 = document.getElementById("j_login_mail1").value;
+			    let j_result = document.getElementById("j_result");
+			    //console.log(score);   
+			    if(j_login_mail1==""){
+			    j_result.textContent = "請輸入您的電子信箱";
+			    }
+
+			    else{
+			    document.location.href="j_request.html";
+			    }			   			            
+			};
+		</script>
+		<input id="j_submit1" class="j_submit" type="submit" value="重新設定密碼" >		
+		</form>
+		
+		<div id="j_forgot1"><span id="forgot_span" onclick="back1()">登入kkday</span> │ <span class="j_register"> <a href="register.php">免費註冊</a></span>
+		<div id="partner">
+			企業會員登入
+		</div>
+		</div>
+	</div>
+
+	
 	<header class="header">
 		<div id="logo" class="logo"></div>
 		

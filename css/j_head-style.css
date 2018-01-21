@@ -93,8 +93,20 @@
 		/*display: none;*/
 		opacity:0.8;
 	}
-	
-#register
+#block-layer1{
+		position: absolute; 
+		top:0; 
+		left:0; 
+		height:100%; 
+		width:100%; 
+		background-color:gray; 
+		z-index:998; 
+		visibility: hidden; 
+		/*display: none;*/
+		opacity:0.8;
+	}
+
+#register, #j_forgot_pw
 	{
 	   position: absolute; 
 		top: 5%; 
@@ -108,34 +120,120 @@
 		/*display: none;*/
 		border-radius: 10px;
 	} 
+
+#forgot_span {
+	width: 100%;
+	margin-left:80px;
+	color: #42dcf4;
+	font-weight: 600;
+}
+#partner {
+	width: 20%;
+	float:right;
+	margin-right: 50px; 
+	color: #42dcf4;
+	font-weight: 600;
+}	
 #register hr
 	{	
 		width: 90%;
-		margin:auto;
+		margin: auto;
 		clear: both;
 		margin-bottom: 15px;
-
+		color: #42dcf4;
+		size: 2px;
 	}
 
-#register h2
+#register h2, #j_forgot_pw h2
 	{	
 		font-size: 36px;
 		float: left;
-		color:lightblue;
+		color:#42dcf4;
 		text-align: center;
 		width: 78%;
 		height: 50px;
 		margin-top: 10px;
 		margin-bottom: 15px;
-
+		margin-left: 50px;
 	}
 
-#register i
+#register i, #j_forgot_pw i
 	{	
-		width: 10%;
+		width: 20px;
 		float: right;
-		margin-right: 20px;
+		margin-right: 40px;
 		margin-top: 20px;			 			 
 	}
+#j_forgot span a, #j_forgot1 span a{
+	text-decoration: none;
+	color: #42dcf4;
+	font-weight: 600;
+}
+.j_reg_logo{
+	width: 250px;
+	margin: auto;
+
+}
+
+.j_kk_login h3, .j_reset_pw h3{
+	color:#555;
+	text-align: center;
+	margin-bottom: 10px;
+}
+
+.j_login_mail, .j_login_pw, .j_submit{
+	width: 500px;
+	height: 35px;
+	margin-left: 80px;
+	margin-bottom: 20px;
+}
+
+/*.j_login_mail1{
+	width: 400px;
+	height: 25px;
+	margin-left: 80px;
+	margin-bottom: 20px;
+}*/
+
+#j_login_mail{
+  font-size: 18px; 
+  background: #E6E6E6 url('../images/email18.png') no-repeat 8px 12px;
+  padding: 8px 8px 8px 42px;
+}
+/*#j_login_mail1{
+  font-size: 18px; 
+  background: #ddd url('../images/email18.png') no-repeat 8px 12px;
+  padding: 8px 8px 8px 42px;
+}*/
+
+#j_login_pw{
+  font-size: 18px; 
+  background: #E6E6E6 url('../images/email18.png') no-repeat 8px 12px;
+  padding: 8px 8px 8px 42px;
+}
+.j_submit{	
+	background-color: #42dcf4;
+	color: #fff;
+	font-size: 18px;
+	font-weight: 600;	
+}
+/*.j_submit1{	
+	background-color: #42dcf4;
+	color: #fff;
+	font-size: 18px;
+	font-weight: 600;	
+}*/
+
+.log-reg{
+	width: 500px;
+	height: 20px;
+	margin: auto;
+	background-color: ##42dcf4;
+}
+
+.log-reg a{
+	color: #fff;
+	text-align: center;
+}
 							
 		

@@ -4,11 +4,15 @@ body, html {
 	margin: 0;
 }
 
+
+
 header {
 	width: 100%;
 	/*max-width: 69em;*/
 	height: 60px;
-	margin-bottom: 10px;		
+	padding-bottom: 10px;	
+	background-color: #fff;	
+	z-index: 0;
 }	
 
 header .logo{
@@ -21,6 +25,7 @@ header .logo{
 	margin-left: 100px;	
 	display: inline-block;
 	margin-top: 5px;
+	z-index: 9;
 
 }
 
