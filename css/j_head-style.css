@@ -4,22 +4,12 @@
 	right:-360px;
 	width:360px;
 	position:fixed;
-	z-index:997;
+	
 	/*padding-top:30px;*/
 	
 	}
 
-#mwt_mwt_slider_scroll2 
-	{
-	right:400px;
-	left:400px;
-	width: 100% - 800px;
-	top:-360px;
-	height:360px;
-	position:fixed;
-	z-index:996;
-	margin: auto;
-	}
+
 			
 #mwt_slider_content0 , #mwt_slider_content1
 	{
@@ -29,6 +19,7 @@
 	padding-top:0;
 	cursor:pointer; 
 	overflow-y:scroll;
+	z-index:997;
 	}
 
 #mwt_slider_content0 a, #mwt_slider_content1 a

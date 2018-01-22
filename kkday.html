@@ -18,20 +18,20 @@
 	<link rel="stylesheet" href="css/mobile.css">
 	<link rel="stylesheet" href="css/slick.css">
 	<link rel="stylesheet" href="css/slick-theme.css">
-	
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-	<script src="js/j_slide.js"></script>
-	<script src="js/j_block.js"></script>
-
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
-	<script src="js/j_script.js"></script>
 
-	<script src="js/main.js"></script>
-	<script src="js/slick.min.js"></script>
 	<script type='text/javascript' src='https://code.jquery.com/jquery-1.9.1.min.js'></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+	
+	<!--<script src="js/slick.min.js"></script>-->
+	
 	<script src="js/j_check.js"></script>	
+	<script src="js/j_slide.js"></script>
+	<script src="js/j_block.js"></script>
+	<script src="js/j_script.js"></script>
+	<script src="js/main.js"></script>
 <!--*********************************************************************-->
 
 <!--*********************************************************************-->
@@ -51,8 +51,9 @@
 		<form action="verify.php" method="post">
 		<input id="j_login_mail" class="j_login_mail" name="mail" type="text" placeholder="電子郵件信箱"><br>
 		<input id="j_login_pw" class="j_login_pw" name="pw" type="text" placeholder="密碼"><br>
-		<input class="j_submit" type="submit" value="登入" onclick="back()">		
-		</form>
+		<!--<input class="j_submit" type="submit" value="登入" onclick="back()">-->
+		<button class="j_submit" type="submit" onclick="back()">
+		登入</button></form>
 		<div id="j_forgot"><span id="forgot_span" onclick="show1()">忘記密碼?</span> │ <span class="j_register"> <a href="register.php">免費註冊</a></span>
 		<div id="partner">
 			企業會員登入
@@ -74,7 +75,7 @@
 		<form >
 		<input id="j_login_mail1" class="j_login_mail" name="mail1" type="text" placeholder="電子郵件信箱"><br>
 		<p id="j_result"></p>
-		<script type="text/javascript">
+		<!--<script type="text/javascript">
 			document.getElementById("j_submit1").onclick = function(){
 			    //console.log("YYYYYYYYY")
 			    let j_login_mail1 = document.getElementById("j_login_mail1").value;
@@ -88,7 +89,7 @@
 			    document.location.href="j_request.html";
 			    }			   			            
 			};
-		</script>
+		</script>-->
 		<input id="j_submit1" class="j_submit" type="submit" value="重新設定密碼" >		
 		</form>
 		
@@ -108,8 +109,7 @@
 		<div id="menu" class="menu" >							
 			<span id="showRight0"><img src="images/tw1.png">&nbsp;繁體中文&nbsp;<img src="images/arrows10.png"></span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span id="showRight1" style="font-family:sans-serif;">TWD&nbsp;<img src="images/arrows10.png"></span><span id="showTop1" onclick="show()">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="images/human12-1.png">&nbsp;登入/註冊</span>					
 		</div>	
-	</header>
-	<div id="mwt_mwt_slider_scroll0">		 
+		<div id="mwt_mwt_slider_scroll0">		 
 		<div id="mwt_slider_content0">
 		    <ol class="menu-slider-right" id="menu-slider-right0"  >
 				<li>&nbsp;&nbsp;&nbsp;<h3></h3>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i id="cross1" class="fa fa-times" style="font-size:24px;color:#555;"></i></li><hr>
@@ -153,19 +153,7 @@
 			</ol>
 		</div>
 	</div>
-
-	<div id="mwt_mwt_slider_scroll2">		 
-		<div id="mwt_slider_content2">
-		    <span class="menu-slider-top" id="menu-slider-top">
-				<h3>登入kkday</h3><hr>
-				<a href="#">AUD 澳幣</a><br>
-				<a href="#">CNY 人民幣</a><br>
-				<a href="#">CNY 人民幣</a><br>
-				<a href="#">CNY 人民幣</a><br>
-				<a href="#">CNY 人民幣</a>				
-			</span>
-		</div>
-	</div>
+	</header>
 
 	<section class="welcome">
 	<div class="container-fluid welcome-page text-center">
