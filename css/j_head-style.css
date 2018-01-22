@@ -195,7 +195,7 @@
 	margin-bottom: 20px;
 }*/
 
-#j_login_mail{
+.j_login_mail{
   font-size: 18px; 
   background: #E6E6E6 url('../images/email18.png') no-repeat 8px 12px;
   padding: 8px 8px 8px 42px;
@@ -208,7 +208,7 @@
 
 #j_login_pw{
   font-size: 18px; 
-  background: #E6E6E6 url('../images/email18.png') no-repeat 8px 12px;
+  background: #E6E6E6 url('../images/lock18.png') no-repeat 8px 12px;
   padding: 8px 8px 8px 42px;
 }
 .j_submit{	

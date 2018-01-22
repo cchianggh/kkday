@@ -19,6 +19,7 @@ header .logo{
 	width: 10%;
 	height: 100%;
 	background-image: url(../images/kkday_logo.png);
+	
 	-webkit-background-size: contain;
 	background-size: contain;
 	background-repeat: no-repeat;
