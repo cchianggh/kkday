@@ -32,19 +32,6 @@ $(function(){
 	});
 });
 //*********************************************************************//
-$(function(){
-	var h = $("#mwt_slider_content2").height();
-	$('#mwt_slider_content2').css('width', ($(window).width() - 800) + 'px' ); //將區塊自動撐滿畫面寬度
 
-	$("#showTop").click(function(){ //滑鼠點下時
-	if ($("#mwt_mwt_slider_scroll2").css('top') == '-'+h+'px')
-	{
-	$("#mwt_mwt_slider_scroll2").animate({ top:'0px' }, 600 ,'swing');
-	}
-	});
-	$("#mwt_slider_content2").click(function(){　//滑鼠再點一下後
-	$("#mwt_mwt_slider_scroll2").animate({ top:'-'+h+'px' }, 600 ,'swing');
-	});
-	});
 //*********************************************************************//
 		

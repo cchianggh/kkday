@@ -7,7 +7,10 @@
 <html lang="en">
 <head>
 	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-	<title>KKday - 當地旅遊,在地旅行,旅遊體驗 - KKday</title> 
+	<title>KKday - 當地旅遊,在地旅行,旅遊體驗 - KKday</title>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css">
+     
 	<link rel="stylesheet" href="css/header.css">
 	<link rel="stylesheet" href="css/j_head-style.css">
 	<link rel="stylesheet" href="css/j_welcome.css">
@@ -18,18 +21,18 @@
 	<link rel="stylesheet" href="css/mobile.css">
 	<link rel="stylesheet" href="css/slick.css">
 	<link rel="stylesheet" href="css/slick-theme.css">
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css">
 
-	<script type='text/javascript' src='https://code.jquery.com/jquery-1.9.1.min.js'></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script src="js/j_slide.js"></script>
+	<script src="js/j_block.js"></script>
+
+	<script type='text/javascript' src='https://code.jquery.com/jquery-1.9.1.min.js'></script>	
     <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
 	
 	<!--<script src="js/slick.min.js"></script>-->
 	
 	<script src="js/j_check.js"></script>	
-	<script src="js/j_slide.js"></script>
-	<script src="js/j_block.js"></script>
+	
 	<script src="js/j_script.js"></script>
 	<script src="js/main.js"></script>
 <!--*********************************************************************-->
@@ -41,7 +44,7 @@
 	<div id="block-layer"></div>
 	<div id="register"><h2>登入kkday</h2><i id="cross3" class="fa fa-times" style="font-size:34px;color:#555;" onclick="back()"></i>
 	<hr>
-		<div class="j_reg_logo" ><a href="https://www.kkday.com/zh-tw/?utm_nooverride=1#_=_" ><image class="j_fb" src="images/fb100.png"></image></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="https://accounts.google.com/signin/oauth/oauthchooseaccount?client_id=70897950535-q490pb0jkhts971rrsu8m3a6rngp0liv.apps.googleusercontent.com&as=131e76f3d4046511&destination=https%3A%2F%2Fwww.kkday.com&approval_state=!ChR3QUh3UklROV8yMFdmU0J1cDlscBIfWTgtdVJ0V2J0V2NVWUg3R0Q2SDQtRUhVV1h1NEVSWQ%E2%88%99ACThZt4AAAAAWmaS9hiYvCpTClVPK3LHhOF1WdHpsew9&xsrfsig=AHgIfE_b9_aum9tC_mLGuU0n-AYTdvE0-g&flowName=GeneralOAuthFlow"> <image class="j_gg" src="images/gg100.png"></image></a>
+		<div class="j_reg_logo" ><image class="j_fb" src="images/fb100.png"></image>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<image class="j_gg" src="images/gg100.png"></image>
 		</div> 
 		<div style="text-align: center; height: 40px; line-height: 40px;">or
 		</div>
@@ -51,9 +54,8 @@
 		<form action="verify.php" method="post">
 		<input id="j_login_mail" class="j_login_mail" name="mail" type="text" placeholder="電子郵件信箱"><br>
 		<input id="j_login_pw" class="j_login_pw" name="pw" type="text" placeholder="密碼"><br>
-		<!--<input class="j_submit" type="submit" value="登入" onclick="back()">-->
-		<button class="j_submit" type="submit" onclick="back()">
-		登入</button></form>
+		<input class="j_submit" type="submit" value="登入" onclick="back()">		
+		</form>
 		<div id="j_forgot"><span id="forgot_span" onclick="show1()">忘記密碼?</span> │ <span class="j_register"> <a href="register.php">免費註冊</a></span>
 		<div id="partner">
 			企業會員登入
@@ -64,7 +66,7 @@
 	<div id="block-layer1"></div>
 	<div id="j_forgot_pw"><h2>忘記密碼</h2><a href="kkday.html"> <i id="cross4" class="fa fa-times" style="font-size:34px;color:#555;"></i></a>
 	<hr>
-		<div class="j_reg_logo" ><a href="https://www.kkday.com/zh-tw/?utm_nooverride=1#_=_" ><image class="j_fb" src="images/fb100.png"></image></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="https://accounts.google.com/signin/oauth/oauthchooseaccount?client_id=70897950535-q490pb0jkhts971rrsu8m3a6rngp0liv.apps.googleusercontent.com&as=131e76f3d4046511&destination=https%3A%2F%2Fwww.kkday.com&approval_state=!ChR3QUh3UklROV8yMFdmU0J1cDlscBIfWTgtdVJ0V2J0V2NVWUg3R0Q2SDQtRUhVV1h1NEVSWQ%E2%88%99ACThZt4AAAAAWmaS9hiYvCpTClVPK3LHhOF1WdHpsew9&xsrfsig=AHgIfE_b9_aum9tC_mLGuU0n-AYTdvE0-g&flowName=GeneralOAuthFlow"><image class="j_gg" src="images/gg100.png"></image></a>
+		<div class="j_reg_logo" ><image class="j_fb" src="images/fb100.png"></image>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<image class="j_gg" src="images/gg100.png"></image>
 		</div> 
 		<div style="text-align: center; height: 80px; line-height: 80px;">or
 		</div>
@@ -75,7 +77,7 @@
 		<form >
 		<input id="j_login_mail1" class="j_login_mail" name="mail1" type="text" placeholder="電子郵件信箱"><br>
 		<p id="j_result"></p>
-		<!--<script type="text/javascript">
+		<script type="text/javascript">
 			document.getElementById("j_submit1").onclick = function(){
 			    //console.log("YYYYYYYYY")
 			    let j_login_mail1 = document.getElementById("j_login_mail1").value;
@@ -89,7 +91,7 @@
 			    document.location.href="j_request.html";
 			    }			   			            
 			};
-		</script>-->
+		</script>
 		<input id="j_submit1" class="j_submit" type="submit" value="重新設定密碼" >		
 		</form>
 		
@@ -102,58 +104,57 @@
 
 	
 	<header class="header">
-		<!--<div id="logo" class="logo"><a href="https://www.kkday.com/zh-tw/"> <img src="images/kkday_logo.png"></a> </div> -->
-		<div id="logo" class="logo" style="cursor :pointer;" onclick="window.location.href='https://www.kkday.com/zh-tw/';"></div>
-		
+		<div id="logo" class="logo"></div>
 		
 		<div id="menu" class="menu" >							
 			<span id="showRight0"><img src="images/tw1.png">&nbsp;繁體中文&nbsp;<img src="images/arrows10.png"></span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span id="showRight1" style="font-family:sans-serif;">TWD&nbsp;<img src="images/arrows10.png"></span><span id="showTop1" onclick="show()">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="images/human12-1.png">&nbsp;登入/註冊</span>					
 		</div>	
-		<div id="mwt_mwt_slider_scroll0">		 
+	</header>
+	<div id="mwt_mwt_slider_scroll0">		 
 		<div id="mwt_slider_content0">
 		    <ol class="menu-slider-right" id="menu-slider-right0"  >
 				<li>&nbsp;&nbsp;&nbsp;<h3></h3>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i id="cross1" class="fa fa-times" style="font-size:24px;color:#555;"></i></li><hr>
 				<li><h3>現在選擇國家</h3></li><hr>
 				<li><a href="en.html">&nbsp;&nbsp;&nbsp;<img src="images/tw1.png">台灣</a></li><hr>
 				<li><h3>所有國家</h3></li><hr>
-				<li><a href="https://www.kkday.com/en">&nbsp;&nbsp;&nbsp;<img src="images/kk1.png">international</a></li><hr>				
-				<li><a href="https://www.kkday.com/en-sg/">&nbsp;&nbsp;&nbsp;<img src="images/sg1.png">Singapore</a></li><hr>
-				<li><a href="https://www.kkday.com/th">&nbsp;&nbsp;&nbsp;<img src="images/th1.png">ประเทศไทย</a></li><hr>
-				<li><a href="https://www.kkday.com/vi">&nbsp;&nbsp;&nbsp;<img src="images/vn1.png">Việt Nam</a></li><hr>
-				<li><a href="https://www.kkday.com/en-ph/">&nbsp;&nbsp;&nbsp;<img src="images/ph1.png">Philippines</a></li><hr>
-				<li><a href="https://www.kkday.com/ko>&nbsp;&nbsp;&nbsp;<img src="images/kr1.png">대한민국</a></li><hr>
-				<li><a href="https://www.kkday.com/zh-hk/">&nbsp;&nbsp;&nbsp;<img src="images/hk1.png">香港</a></li><hr>
-				<li><a href="https://www.kkday.com/en-id/">&nbsp;&nbsp;&nbsp;<img src="images/id1.png">Indonesia</a></li><hr>
-				<li><a href="https://www.kkday.com/ja">&nbsp;&nbsp;&nbsp;<img src="images/jp1.png">日本</a></li><hr>
-				<li><a href="https://www.kkday.com/zh-cn/">&nbsp;&nbsp;&nbsp;<img src="images/cn1.png">中国</a></li><hr>
-				<li><a href="https://www.kkday.com/zh-my/">&nbsp;&nbsp;&nbsp;<img src="images/my1.png">Malaysia</a></li><hr>
+				<li><a href="en.html">&nbsp;&nbsp;&nbsp;<img src="images/kk1.png">international</a></li><hr>				
+				<li><a href="sp.html">&nbsp;&nbsp;&nbsp;<img src="images/sg1.png">Singapore</a></li><hr>
+				<li><a href="ประเทศไทย.html">&nbsp;&nbsp;&nbsp;<img src="images/th1.png">ประเทศไทย</a></li><hr>
+				<li><a href="vn.html">&nbsp;&nbsp;&nbsp;<img src="images/vn1.png">Việt Nam</a></li><hr>
+				<li><a href="pp.html">&nbsp;&nbsp;&nbsp;<img src="images/ph1.png">Philippines</a></li><hr>
+				<li><a href="대한민국.html">&nbsp;&nbsp;&nbsp;<img src="images/kr1.png">대한민국</a></li><hr>
+				<li><a href="hk.html">&nbsp;&nbsp;&nbsp;<img src="images/hk1.png">香港</a></li><hr>
+				<li><a href="in.html">&nbsp;&nbsp;&nbsp;<img src="images/id1.png">Indonesia</a></li><hr>
+				<li><a href="jp.html">&nbsp;&nbsp;&nbsp;<img src="images/jp1.png">日本</a></li><hr>
+				<li><a href="cn.html">&nbsp;&nbsp;&nbsp;<img src="images/cn1.png">中国</a></li><hr>
+				<li><a href="ms.html">&nbsp;&nbsp;&nbsp;<img src="images/my1.png">Malaysia</a></li><hr>
 			</ol>
 		</div>
 	</div>
 	<div id="mwt_mwt_slider_scroll1">		 
 		<div id="mwt_slider_content1">
-			
 		    <ol class="menu-slider-right" id="menu-slider-right1">
 				<li>&nbsp;&nbsp;&nbsp;<h3></h3>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i id="cross2" class="fa fa-times" style="font-size:24px;color:#555;"></i></li><hr>
-				<li><a class="j_rate" href="#" value="" >&nbsp;&nbsp;&nbsp;AUD 澳幣</a></li><hr>
-				<li><a class="j_rate" href="#">&nbsp;&nbsp;&nbsp;CNY 人民幣</a></li><hr>
-				<li><a class="j_rate" href="#">&nbsp;&nbsp;&nbsp;EUR 歐元</a></li><hr>
-				<li><a class="j_rate" href="#">&nbsp;&nbsp;&nbsp;GBP 英鎊</a></li><hr>
-				<li><a class="j_rate" href="#">&nbsp;&nbsp;&nbsp;HKD 港幣</a></li><hr>
-				<li><a class="j_rate" href="#">&nbsp;&nbsp;&nbsp;IDR 印尼盾</a></li><hr>
-				<li><a class="j_rate" href="#">&nbsp;&nbsp;&nbsp;JPY 日圓</a></li><hr>
-				<li><a class="j_rate" href="#">&nbsp;&nbsp;&nbsp;KRW 韓圓</a></li><hr>
-				<li><a class="j_rate" href="#">&nbsp;&nbsp;&nbsp;MYR 馬來西亞令吉</a></li><hr>
-				<li><a class="j_rate" href="#">&nbsp;&nbsp;&nbsp;PHP 菲律賓比索</a></li><hr>
-				<li><a class="j_rate" href="#">&nbsp;&nbsp;&nbsp;SGD 新加坡幣</a></li><hr>
-				<li><a class="j_rate" href="#">&nbsp;&nbsp;&nbsp;THB 泰銖</a></li><hr>
-				<li><a class="j_rate" href="#">&nbsp;&nbsp;&nbsp;TWD 新臺幣</a></li><hr>
-				<li><a class="j_rate" href="#">&nbsp;&nbsp;&nbsp;USD 美元</a></li><hr>
-				<li><a class="j_rate" href="#">&nbsp;&nbsp;&nbsp;VND 越南盾</a></li><hr>
+				<li><a href="#">&nbsp;&nbsp;&nbsp;AUD 澳幣</a></li><hr>
+				<li><a href="#">&nbsp;&nbsp;&nbsp;CNY 人民幣</a></li><hr>
+				<li><a href="#">&nbsp;&nbsp;&nbsp;EUR 歐元</a></li><hr>
+				<li><a href="#">&nbsp;&nbsp;&nbsp;GBP 英鎊</a></li><hr>
+				<li><a href="#">&nbsp;&nbsp;&nbsp;HKD 港幣</a></li><hr>
+				<li><a href="#">&nbsp;&nbsp;&nbsp;IDR 印尼盾</a></li><hr>
+				<li><a href="#">&nbsp;&nbsp;&nbsp;JPY 日圓</a></li><hr>
+				<li><a href="#">&nbsp;&nbsp;&nbsp;KRW 韓圓</a></li><hr>
+				<li><a href="#">&nbsp;&nbsp;&nbsp;MYR 馬來西亞令吉</a></li><hr>
+				<li><a href="#">&nbsp;&nbsp;&nbsp;PHP 菲律賓比索</a></li><hr>
+				<li><a href="#">&nbsp;&nbsp;&nbsp;SGD 新加坡幣</a></li><hr>
+				<li><a href="#">&nbsp;&nbsp;&nbsp;THB 泰銖</a></li><hr>
+				<li><a href="#">&nbsp;&nbsp;&nbsp;TWD 新臺幣</a></li><hr>
+				<li><a href="#">&nbsp;&nbsp;&nbsp;USD 美元</a></li><hr>
+				<li><a href="#">&nbsp;&nbsp;&nbsp;VND 越南盾</a></li><hr>
 			</ol>
 		</div>
 	</div>
-	</header>
+
+	
 
 	<section class="welcome">
 	<div class="container-fluid welcome-page text-center">
