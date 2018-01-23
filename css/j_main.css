@@ -9,8 +9,9 @@
 }
 
 .j_home-section{
-	padding: 0;
-	margin: 0;
+	padding: 0px;
+	margin-top: 10px;
+	margin-bottom: 10px;
 }
 
 .j_container h2{
@@ -18,7 +19,12 @@
 }
 
 .j_section-head{
-	margin: 0 100px;
+	margin: 0 100px;	
+}
+
+.j_title{
+	margin-top: 40px;
+	margin-bottom: 20px;
 }
 
 .j_col-4{
@@ -65,11 +71,12 @@
 .j_star{
 	margin-top: 8px; 
 	margin-left: 10px;
+	width: 30%;
 }
 
 .j_star i{
 	height: 18px;
-	
+	width: 14px;
 	font-size:14px;
 	margin-top: 2px; 
 	float:left
@@ -78,9 +85,10 @@
 .j_currency{
 	height: 18px;
 	font-size: 12px;
-	/*float:left;*/
-	margin-left: 180px;
+	float:left;
+	margin-left: 95px;
 	color: #000;
+	width: 5%;
 	
 }
 .j_price{
@@ -90,4 +98,25 @@
 	color: #42dcf4;
 	margin-right: 5px;
 	width: 20%;
+}
+
+#j_spa{
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+
+#j_spa1 .j_pix{
+	background-image: url(../images/5101.jpg);	
+}
+/*.j_col-4 .j_pix:nth-of-type(2){*/
+#j_spa2 .j_pix{
+	background-image: url(../images/5201.jpg);
+}
+/*.j_col-4 .j_pix:nth-of-type(3){*/
+#j_spa3 .j_pix{
+	background-image: url(../images/5301.jpg);
+}
+/*.j_col-4 .j_pix:nth-of-type(4){*/
+#j_spa4 .j_pix{
+	background-image: url(../images/5401.jpg);
 }
