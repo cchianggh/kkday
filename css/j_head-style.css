@@ -74,7 +74,11 @@
 		color: #555;
 	}
 
-.menu-slider-right ol hr{
+.menu-slider-right li{
+		margin-left: 30px;
+	}
+
+.menu-slider-right hr{
 		color: #888;
 	}
 #menu{
@@ -182,7 +186,7 @@
 }
 
 .j_login_mail, .j_login_pw, .j_submit{
-	width: 500px;
+	width: 400px;
 	height: 35px;
 	margin-left: 80px;
 	margin-bottom: 20px;

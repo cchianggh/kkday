@@ -15,11 +15,11 @@
 }
 
 .j_container h2{
-	padding-left: 110px; 
+	padding-left: 50px; 
 }
 
 .j_section-head{
-	margin: 0 100px;	
+	margin: 0 50px;	
 }
 
 .j_title{
@@ -33,11 +33,11 @@
 	margin: 0 10px;
 	height: 350px;
 	border: 1px solid #ccc;
-	border-radius: 5px;
+	border-radius: 6px;
 }
 
 .j_col-4 .j_pix{
-	height:200px;
+	height:180px;
 	background-repeat: no-repeat;
 	-webkit-background-size: cover;
 	background-size: cover;
@@ -57,9 +57,11 @@
 	background-image: url(../images/2301.jpg);
 }
 
-/*#j_jp4 .j_pix{
-	background-image: url(../images/401.png);
-}*/
+#j_jp4 .j_pix{
+	background-image: url(../images/2401.jpg);
+}
+
+
 
 #j_garden1 .j_pix{
 	background-image: url(../images/3101-1.jpg);	
@@ -119,7 +121,7 @@
 
 .j_description{
 	text-align: top;
-	height: 106px;
+	height: 126px;
 	margin-top: 10px; 
 	margin-left: 10px;
 }
@@ -147,18 +149,19 @@
 
 .j_rating-no h5{
 	color: #888;
+	float: left;
 }
-.j_currency{
+.j_currency, .j_currency1{
 	height: 18px;
 	font-size: 12px;
 	float:left;
-	margin-left: 75px;
+	margin-left: 70px;
 	color: #888;
 	width: 2%;
 	line-height: 18px;
 }
 
-.j_currency1{
+/*.j_currency1{
 	height: 18px;
 	font-size: 12px;
 	float:left;
@@ -166,7 +169,7 @@
 	color: #888;
 	width: 2%;
 	line-height: 18px;
-}
+}*/
 
 .j_currency2{
 	height: 18px;
@@ -183,7 +186,7 @@
 	width: 50px;
 	float: right;
 	color: #42dcf4;
-	margin-right: 5px;
+	margin-right: 0;
 	width: 18%;
 	line-height: 18px;
 }
