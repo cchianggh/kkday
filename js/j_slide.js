@@ -18,7 +18,14 @@ $(function(){
 });
 //*********************************************************************//
 //window.onload = function(){
-
+	/*$_y=document.getElementsByClassName("j_price");
+  	console.log($_y);
+	    for(var j = 0; j < $_y.length; j++){
+	    	var $_ArrK = new Array();	
+	    	$_ArrK = $_y[j].innerText;
+	console.log($_ArrK);		    		    	 
+			Object.freeze($_ArrK);
+		};*/
 //};
 
 $(function(){	
@@ -36,55 +43,71 @@ $(function(){
 	$("#mwt_mwt_slider_scroll1").animate({ right:'-'+w+'px' }, 600 ,'swing');
 	});
 
-	/*y=document.getElementsByClassName("j_price");
-  	console.log(y);
-	    for(var j = 0; j < y.length; j++){
-	    	var $_ArrK = new Array();	
-	    	Object.freeze($_ArrK);
-	    	$_ArrK = y[j].innerText;
-	console.log($_ArrK);		    		    	 			
-		var ip = new Array();	
-		 };*/
-
 	
+
+	 
 
     $("#AUD").click(function() {
   	//alert( " 澳幣 for .click() called." );
-
   	let rate = 0.0420;
 	let rate1 = rate*1.2;
-  	
 
   	x=document.getElementsByClassName("j_currency");
   	console.log(x);
 		    for(var i = 0; i < x.length; i++){
 		    	x[i].innerText='AUD';    // Change the content	    
-	};	 
+	};	
 
+	/*$_y=document.getElementsByClassName("j_price");
+  	console.log($_y);
+	    for(var j = 0; j < $_y.length; j++){
+	    	Object.freeze($_ArrK);
+	    	var $_ArrK = new Array();	
+	    	$_ArrK = $_y[j].innerText;
+	console.log($_ArrK);		    		    	 
+			
 	y=document.getElementsByClassName("j_price");
+	console.log($_ArrK);
   	console.log(y);
 	    for(var j = 0; j < y.length; j++){
-	    	var $_ArrK = new Array();	
-	    	$_ArrK = y[j].innerText;
-	console.log($_ArrK);		    		    	 
-			Object.freeze($_ArrK);
+	    	var ArrK = new Array();	
+	    	ArrK = y[j].innerText;
+	console.log(ArrK);		    		    	 
+			Object.freeze(ArrK);
 		var ip = new Array();
 
-	console.log($_ArrK);	
+	console.log(ArrK);	
 		 		var ip = new Array();
-		    	ip = $_ArrK;
+		    	ip = ArrK;
 		 		console.log(ip);			 
 		    ip *= rate1;
 		    console.log(ip);
 		   	ip = Math.floor(ip*10)/10; 
 		   	console.log(ip);
 		    
-		    $_y[j].innerText = ip;
+		    y[j].innerText = ip;
 		    
 		    //console.log(y);
-		    console.log($_ArrK);
+		    console.log(ArrK);
 		};	
-		   
+		}; */
+		$_y=document.getElementsByClassName("j_price-hd");
+  	console.log($_y);
+	    	for(var j = 0; j < $_y.length; j++){
+	    		$_y_1=$_y[j].innerText;    		    			    	
+	    	
+	    	y=document.getElementsByClassName("j_price");
+  	console.log(y);
+	    		for(var j = 0; j < y.length; j++){
+	    			y_1 = y[j].innerText;
+	    		if(y_1!=$_y_1){
+	    			y[j].innerText=$_y[j].innerText;
+	    		};
+	    			y[j].innerText *= rate1;
+		    		y[j].innerText = Math.floor(y[j].innerText*10)/10;
+	    	};
+	    };
+
 	$("#mwt_mwt_slider_scroll1").animate({ right:'-'+w+'px' }, 600 ,'swing');
 
 	h=document.getElementById("showRight1"); 
@@ -108,16 +131,17 @@ $(function(){
 		    };
 	/*y=document.getElementsByClassName("j_price");
   	console.log(y);
-		    for(var j = 0; j < y.length; j++){
-		    var ArrK = new Array();	
-		    	ArrK = y[j].innerText;
+	    for(var j = 0; j < y.length; j++){
+	    	var ArrK = new Array();	
+	    	ArrK = y[j].innerText;
 	console.log(ArrK);		    		    	 
-		    	  Object.freeze(ArrK);
-		    //var ip = new Array();
-		    console.log(ArrK);	*/   
-		    console.log($_ArrK); 
-		    	ip = $_ArrK;
-		 		console.log(ip);
+			Object.freeze(ArrK);
+		var ip = new Array();
+
+	console.log(ArrK);	
+		 		var ip = new Array();
+		    	ip = ArrK;
+		 		console.log(ip);			 
 		    ip *= rate1;
 		    console.log(ip);
 		   	ip = Math.floor(ip*10)/10; 
@@ -125,9 +149,25 @@ $(function(){
 		    
 		    y[j].innerText = ip;
 		    
-		    console.log(y[j].innerText);
-		    console.log($_ArrK);
-		    /*};	*/
+		    //console.log(y);
+		    console.log(ArrK);
+		};*/
+		$_y=document.getElementsByClassName("j_price-hd");
+  	console.log($_y);
+	    	for(var j = 0; j < $_y.length; j++){
+	    		$_y_1=$_y[j].innerText;    		    			    	
+	    	
+	    	y=document.getElementsByClassName("j_price");
+  	console.log(y);
+	    		for(var j = 0; j < y.length; j++){
+	    			y_1 = y[j].innerText;
+	    		if(y_1!=$_y_1){
+	    			y[j].innerText=$_y[j].innerText;
+	    		};
+	    			y[j].innerText *= rate1;
+		    		y[j].innerText = Math.floor(y[j].innerText*10)/10;
+	    	};
+	    };
 	$("#mwt_mwt_slider_scroll1").animate({ right:'-'+w+'px' }, 600 ,'swing');
 
 	h=document.getElementById("showRight1"); 
@@ -144,12 +184,28 @@ $(function(){
 		    for(var i = 0; i < x.length; i++){
 		    	x[i].innerText='EUR';    // Change the content
 		    };
-	y=document.getElementsByClassName("j_price");  // Find the elements
+	/*y=document.getElementsByClassName("j_price");  // Find the elements
   	console.log(y);
 		    for(var j = 0; j < y.length; j++){	
 		    	y[j].innerText *= rate1;    // Change the content
 		    	y[j].innerText = Math.floor(y[j].innerText*10)/10;
-		    };
+		    };*/
+	$_y=document.getElementsByClassName("j_price-hd");
+  	console.log($_y);
+	    	for(var j = 0; j < $_y.length; j++){
+	    		$_y_1=$_y[j].innerText;    		    			    	
+	    	
+	    	y=document.getElementsByClassName("j_price");
+  	console.log(y);
+	    		for(var j = 0; j < y.length; j++){
+	    			y_1 = y[j].innerText;
+	    		if(y_1!=$_y_1){
+	    			y[j].innerText=$_y[j].innerText;
+	    		};
+	    			y[j].innerText *= rate1;
+		    		y[j].innerText = Math.floor(y[j].innerText*10)/10;
+	    	};
+	    };
 	$("#mwt_mwt_slider_scroll1").animate({ right:'-'+w+'px' }, 600 ,'swing');
 	h=document.getElementById("showRight1"); 
 	h.innerText='EUR' ;
@@ -165,13 +221,22 @@ $(function(){
 		    for(var i = 0; i < x.length; i++){
 		    	x[i].innerText='GBP';    // Change the content
 		    };
-	y=document.getElementsByClassName("j_price");  // Find the elements
+	$_y=document.getElementsByClassName("j_price-hd");
+  	console.log($_y);
+	    	for(var j = 0; j < $_y.length; j++){
+	    		$_y_1=$_y[j].innerText;    		    			    	
+	    	
+	    	y=document.getElementsByClassName("j_price");
   	console.log(y);
-		    for(var j = 0; j < y.length; j++){	
-		    	y[j].innerText *= rate1;    // Change the content
-		    	//y[j].innerText = Math.floor(y[j].innerText*100)/100;
-		    	y[j].innerText = Math.floor(y[j].innerText*10)/10;
-		    };
+	    		for(var j = 0; j < y.length; j++){
+	    			y_1 = y[j].innerText;
+	    		if(y_1!=$_y_1){
+	    			y[j].innerText=$_y[j].innerText;
+	    		};
+	    			y[j].innerText *= rate1;
+		    		y[j].innerText = Math.floor(y[j].innerText*10)/10;
+	    	};
+	    };
 	$("#mwt_mwt_slider_scroll1").animate({ right:'-'+w+'px' }, 600 ,'swing');
 	h=document.getElementById("showRight1"); 
 	h.innerText='GBP' ;
@@ -187,12 +252,22 @@ $(function(){
 		    for(var i = 0; i < x.length; i++){
 		    	x[i].innerText='HKD';    // Change the content
 		    };
-	y=document.getElementsByClassName("j_price");  // Find the elements
+	$_y=document.getElementsByClassName("j_price-hd");
+  	console.log($_y);
+	    	for(var j = 0; j < $_y.length; j++){
+	    		$_y_1=$_y[j].innerText;    		    			    	
+	    	
+	    	y=document.getElementsByClassName("j_price");
   	console.log(y);
-		    for(var j = 0; j < y.length; j++){	
-		    	y[j].innerText *= rate1;    // Change the content
-		    	y[j].innerText = Math.floor(y[j].innerText*10)/10;
-		    };
+	    		for(var j = 0; j < y.length; j++){
+	    			y_1 = y[j].innerText;
+	    		if(y_1!=$_y_1){
+	    			y[j].innerText=$_y[j].innerText;
+	    		};
+	    			y[j].innerText *= rate1;
+		    		y[j].innerText = Math.floor(y[j].innerText*10)/10;
+	    	};
+	    };
 	$("#mwt_mwt_slider_scroll1").animate({ right:'-'+w+'px' }, 600 ,'swing');
 	h=document.getElementById("showRight1"); 
 	h.innerText='HKD' ;
@@ -208,12 +283,22 @@ $(function(){
 		    for(var i = 0; i < x.length; i++){
 		    	x[i].innerText='IDR';    // Change the content
 		    };
-	y=document.getElementsByClassName("j_price");  // Find the elements
+	$_y=document.getElementsByClassName("j_price-hd");
+  	console.log($_y);
+	    	for(var j = 0; j < $_y.length; j++){
+	    		$_y_1=$_y[j].innerText;    		    			    	
+	    	
+	    	y=document.getElementsByClassName("j_price");
   	console.log(y);
-		    for(var j = 0; j < y.length; j++){	
-		    	y[j].innerText *= rate1;    // Change the content
-		    	y[j].innerText = Math.floor(y[j].innerText*10)/10;
-		    };
+	    		for(var j = 0; j < y.length; j++){
+	    			y_1 = y[j].innerText;
+	    		if(y_1!=$_y_1){
+	    			y[j].innerText=$_y[j].innerText;
+	    		};
+	    			y[j].innerText *= rate1;
+		    		y[j].innerText = Math.floor(y[j].innerText*10)/10;
+	    	};
+	    };
 	$("#mwt_mwt_slider_scroll1").animate({ right:'-'+w+'px' }, 600 ,'swing');
 	h=document.getElementById("showRight1"); 
 	h.innerText='IDR' ;
@@ -229,12 +314,22 @@ $(function(){
 		    for(var i = 0; i < x.length; i++){
 		    	x[i].innerText='JPY';    // Change the content
 		    };
-	y=document.getElementsByClassName("j_price");  // Find the elements
+	$_y=document.getElementsByClassName("j_price-hd");
+  	console.log($_y);
+	    	for(var j = 0; j < $_y.length; j++){
+	    		$_y_1=$_y[j].innerText;    		    			    	
+	    	
+	    	y=document.getElementsByClassName("j_price");
   	console.log(y);
-		    for(var j = 0; j < y.length; j++){	
-		    	y[j].innerText *= rate1;    // Change the content
-		    	y[j].innerText = Math.floor(y[j].innerText*10)/10;
-		    };
+	    		for(var j = 0; j < y.length; j++){
+	    			y_1 = y[j].innerText;
+	    		if(y_1!=$_y_1){
+	    			y[j].innerText=$_y[j].innerText;
+	    		};
+	    			y[j].innerText *= rate1;
+		    		y[j].innerText = Math.floor(y[j].innerText*10)/10;
+	    	};
+	    };
 	$("#mwt_mwt_slider_scroll1").animate({ right:'-'+w+'px' }, 600 ,'swing');
 	h=document.getElementById("showRight1"); 
 	h.innerText='JPY' ;
@@ -250,12 +345,22 @@ $(function(){
 		    for(var i = 0; i < x.length; i++){
 		    	x[i].innerText='KRW';    // Change the content
 		    };
-	y=document.getElementsByClassName("j_price");  // Find the elements
+	$_y=document.getElementsByClassName("j_price-hd");
+  	console.log($_y);
+	    	for(var j = 0; j < $_y.length; j++){
+	    		$_y_1=$_y[j].innerText;    		    			    	
+	    	
+	    	y=document.getElementsByClassName("j_price");
   	console.log(y);
-		    for(var j = 0; j < y.length; j++){	
-		    	y[j].innerText *= rate1;    // Change the content
-		    	y[j].innerText = Math.floor(y[j].innerText*10)/10;
-		    };
+	    		for(var j = 0; j < y.length; j++){
+	    			y_1 = y[j].innerText;
+	    		if(y_1!=$_y_1){
+	    			y[j].innerText=$_y[j].innerText;
+	    		};
+	    			y[j].innerText *= rate1;
+		    		y[j].innerText = Math.floor(y[j].innerText*10)/10;
+	    	};
+	    };
 	$("#mwt_mwt_slider_scroll1").animate({ right:'-'+w+'px' }, 600 ,'swing');
 	h=document.getElementById("showRight1"); 
 	h.innerText='KRW' ;
@@ -271,12 +376,22 @@ $(function(){
 		    for(var i = 0; i < x.length; i++){
 		    	x[i].innerText='MYR';    // Change the content
 		    };
-	y=document.getElementsByClassName("j_price");  // Find the elements
+	$_y=document.getElementsByClassName("j_price-hd");
+  	console.log($_y);
+	    	for(var j = 0; j < $_y.length; j++){
+	    		$_y_1=$_y[j].innerText;    		    			    	
+	    	
+	    	y=document.getElementsByClassName("j_price");
   	console.log(y);
-		    for(var j = 0; j < y.length; j++){	
-		    	y[j].innerText *= rate1;    // Change the content
-		    	y[j].innerText = Math.floor(y[j].innerText*10)/10;
-		    };
+	    		for(var j = 0; j < y.length; j++){
+	    			y_1 = y[j].innerText;
+	    		if(y_1!=$_y_1){
+	    			y[j].innerText=$_y[j].innerText;
+	    		};
+	    			y[j].innerText *= rate1;
+		    		y[j].innerText = Math.floor(y[j].innerText*10)/10;
+	    	};
+	    };
 	$("#mwt_mwt_slider_scroll1").animate({ right:'-'+w+'px' }, 600 ,'swing');
 	h=document.getElementById("showRight1"); 
 	h.innerText='MYR' ;
@@ -292,12 +407,22 @@ $(function(){
 		    for(var i = 0; i < x.length; i++){
 		    	x[i].innerText='PHP';    // Change the content
 		    };
-	y=document.getElementsByClassName("j_price");  // Find the elements
+	$_y=document.getElementsByClassName("j_price-hd");
+  	console.log($_y);
+	    	for(var j = 0; j < $_y.length; j++){
+	    		$_y_1=$_y[j].innerText;    		    			    	
+	    	
+	    	y=document.getElementsByClassName("j_price");
   	console.log(y);
-		    for(var j = 0; j < y.length; j++){	
-		    	y[j].innerText *= rate1;    // Change the content
-		    	y[j].innerText = Math.floor(y[j].innerText*10)/10;
-		    };
+	    		for(var j = 0; j < y.length; j++){
+	    			y_1 = y[j].innerText;
+	    		if(y_1!=$_y_1){
+	    			y[j].innerText=$_y[j].innerText;
+	    		};
+	    			y[j].innerText *= rate1;
+		    		y[j].innerText = Math.floor(y[j].innerText*10)/10;
+	    	};
+	    };
 	$("#mwt_mwt_slider_scroll1").animate({ right:'-'+w+'px' }, 600 ,'swing');
 	h=document.getElementById("showRight1"); 
 	h.innerText='PHP' ;
@@ -313,12 +438,22 @@ $(function(){
 		    for(var i = 0; i < x.length; i++){
 		    	x[i].innerText='SGD';    // Change the content
 		    };
-	y=document.getElementsByClassName("j_price");  // Find the elements
+	$_y=document.getElementsByClassName("j_price-hd");
+  	console.log($_y);
+	    	for(var j = 0; j < $_y.length; j++){
+	    		$_y_1=$_y[j].innerText;    		    			    	
+	    	
+	    	y=document.getElementsByClassName("j_price");
   	console.log(y);
-		    for(var j = 0; j < y.length; j++){	
-		    	y[j].innerText *= rate1;    // Change the content
-		    	y[j].innerText = Math.floor(y[j].innerText*10)/10;
-		    };
+	    		for(var j = 0; j < y.length; j++){
+	    			y_1 = y[j].innerText;
+	    		if(y_1!=$_y_1){
+	    			y[j].innerText=$_y[j].innerText;
+	    		};
+	    			y[j].innerText *= rate1;
+		    		y[j].innerText = Math.floor(y[j].innerText*10)/10;
+	    	};
+	    };
 	$("#mwt_mwt_slider_scroll1").animate({ right:'-'+w+'px' }, 600 ,'swing');
 	h=document.getElementById("showRight1"); 
 	h.innerText='SGD' ;
@@ -334,12 +469,22 @@ $(function(){
 		    for(var i = 0; i < x.length; i++){
 		    	x[i].innerText='THB';    // Change the content
 		    };
-	y=document.getElementsByClassName("j_price");  // Find the elements
+	$_y=document.getElementsByClassName("j_price-hd");
+  	console.log($_y);
+	    	for(var j = 0; j < $_y.length; j++){
+	    		$_y_1=$_y[j].innerText;    		    			    	
+	    	
+	    	y=document.getElementsByClassName("j_price");
   	console.log(y);
-		    for(var j = 0; j < y.length; j++){	
-		    	y[j].innerText *= rate1;    // Change the content
-		    	y[j].innerText = Math.floor(y[j].innerText*10)/10;
-		    };
+	    		for(var j = 0; j < y.length; j++){
+	    			y_1 = y[j].innerText;
+	    		if(y_1!=$_y_1){
+	    			y[j].innerText=$_y[j].innerText;
+	    		};
+	    			y[j].innerText *= rate1;
+		    		y[j].innerText = Math.floor(y[j].innerText*10)/10;
+	    	};
+	    };
 	$("#mwt_mwt_slider_scroll1").animate({ right:'-'+w+'px' }, 600 ,'swing');
 	h=document.getElementById("showRight1"); 
 	h.innerText='THB' ;
@@ -355,12 +500,22 @@ $(function(){
 		    for(var i = 0; i < x.length; i++){
 		    	x[i].innerText='TWD';    // Change the content
 		    };
-	y=document.getElementsByClassName("j_price");  // Find the elements
+	$_y=document.getElementsByClassName("j_price-hd");
+  	console.log($_y);
+	    	for(var j = 0; j < $_y.length; j++){
+	    		$_y_1=$_y[j].innerText;    		    			    	
+	    	
+	    	y=document.getElementsByClassName("j_price");
   	console.log(y);
-		    for(var j = 0; j < y.length; j++){	
-		    	y[j].innerText *= rate;    // Change the content
-		    	y[j].innerText = Math.floor(y[j].innerText*10)/10;
-		    };
+	    		for(var j = 0; j < y.length; j++){
+	    			y_1 = y[j].innerText;
+	    		if(y_1!=$_y_1){
+	    			y[j].innerText=$_y[j].innerText;
+	    		};
+	    			y[j].innerText *= rate1;
+		    		y[j].innerText = Math.floor(y[j].innerText*10)/10;
+	    	};
+	    };
 	$("#mwt_mwt_slider_scroll1").animate({ right:'-'+w+'px' }, 600 ,'swing');
 	h=document.getElementById("showRight1"); 
 	h.innerText='TWD' ;
@@ -376,12 +531,22 @@ $(function(){
 		    for(var i = 0; i < x.length; i++){
 		    	x[i].innerText='USD';    // Change the content
 		    };
-	y=document.getElementsByClassName("j_price");  // Find the elements
+	$_y=document.getElementsByClassName("j_price-hd");
+  	console.log($_y);
+	    	for(var j = 0; j < $_y.length; j++){
+	    		$_y_1=$_y[j].innerText;    		    			    	
+	    	
+	    	y=document.getElementsByClassName("j_price");
   	console.log(y);
-		    for(var j = 0; j < y.length; j++){	
-		    	y[j].innerText *= rate1;    // Change the content
-		    	y[j].innerText = Math.floor(y[j].innerText*10)/10;
-		    };
+	    		for(var j = 0; j < y.length; j++){
+	    			y_1 = y[j].innerText;
+	    		if(y_1!=$_y_1){
+	    			y[j].innerText=$_y[j].innerText;
+	    		};
+	    			y[j].innerText *= rate1;
+		    		y[j].innerText = Math.floor(y[j].innerText*10)/10;
+	    	};
+	    };
 	$("#mwt_mwt_slider_scroll1").animate({ right:'-'+w+'px' }, 600 ,'swing');
 	h=document.getElementById("showRight1"); 
 	h.innerText='USD' ;
@@ -397,12 +562,22 @@ $(function(){
 		    for(var i = 0; i < x.length; i++){
 		    	x[i].innerText='VND';    // Change the content
 		    };
-	y=document.getElementsByClassName("j_price");  // Find the elements
+	$_y=document.getElementsByClassName("j_price-hd");
+  	console.log($_y);
+	    	for(var j = 0; j < $_y.length; j++){
+	    		$_y_1=$_y[j].innerText;    		    			    	
+	    	
+	    	y=document.getElementsByClassName("j_price");
   	console.log(y);
-		    for(var j = 0; j < y.length; j++){	
-		    	y[j].innerText *= rate1;    // Change the content
-		    	y[j].innerText = Math.floor(y[j].innerText*10)/10;
-		    };
+	    		for(var j = 0; j < y.length; j++){
+	    			y_1 = y[j].innerText;
+	    		if(y_1!=$_y_1){
+	    			y[j].innerText=$_y[j].innerText;
+	    		};
+	    			y[j].innerText *= rate1;
+		    		y[j].innerText = Math.floor(y[j].innerText*10)/10;
+	    	};
+	    };
 	$("#mwt_mwt_slider_scroll1").animate({ right:'-'+w+'px' }, 600 ,'swing');
 	h=document.getElementById("showRight1"); 
 	h.innerText='VND' ;
