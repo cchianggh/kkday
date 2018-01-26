@@ -1,3 +1,4 @@
+
 $(function(){
 	var w = $("#mwt_slider_content0").width();
 	$('#mwt_slider_content0').css('height', ($(window).height() - 2) + 'px' ); //將區塊自動撐滿畫面高度
@@ -16,6 +17,10 @@ $(function(){
 	});						
 });
 //*********************************************************************//
+//window.onload = function(){
+
+//};
+
 $(function(){	
 	
 	var w = $("#mwt_slider_content1").width();
@@ -30,44 +35,104 @@ $(function(){
 	$("#cross2").click(function(){　//滑鼠再點一下後
 	$("#mwt_mwt_slider_scroll1").animate({ right:'-'+w+'px' }, 600 ,'swing');
 	});
+
+	/*y=document.getElementsByClassName("j_price");
+  	console.log(y);
+	    for(var j = 0; j < y.length; j++){
+	    	var $_ArrK = new Array();	
+	    	Object.freeze($_ArrK);
+	    	$_ArrK = y[j].innerText;
+	console.log($_ArrK);		    		    	 			
+		var ip = new Array();	
+		 };*/
+
+	
+
     $("#AUD").click(function() {
   	//alert( " 澳幣 for .click() called." );
+
   	let rate = 0.0420;
 	let rate1 = rate*1.2;
-  	//console.log(rate);
-  	//j_currency = document.getElementById("AUD").innerText;
-  	//console.log(j_currency);
-  	//document.getElementByClassName("j_currency").innerText = 'j_currency';
-  	x=document.getElementsByClassName("j_currency");  // Find the elements
+  	
+
+  	x=document.getElementsByClassName("j_currency");
   	console.log(x);
 		    for(var i = 0; i < x.length; i++){
-		    	x[i].innerText='AUD';    // Change the content
-		    };
-  	y=document.getElementsByClassName("j_price");  // Find the elements
+		    	x[i].innerText='AUD';    // Change the content	    
+	};	 
+
+	y=document.getElementsByClassName("j_price");
   	console.log(y);
-		    for(var j = 0; j < y.length; j++){	
-		    	y[j].innerText *= rate1;    // Change the content
-		    	y[j].innerText = Math.floor(y[j].innerText*10)/10;
-		    };	
-	$("#mwt_mwt_slider_scroll1").animate({ right:'-'+w+'px' }, 600 ,'swing');	
+	    for(var j = 0; j < y.length; j++){
+	    	var $_ArrK = new Array();	
+	    	$_ArrK = y[j].innerText;
+	console.log($_ArrK);		    		    	 
+			Object.freeze($_ArrK);
+		var ip = new Array();
+
+	console.log($_ArrK);	
+		 		var ip = new Array();
+		    	ip = $_ArrK;
+		 		console.log(ip);			 
+		    ip *= rate1;
+		    console.log(ip);
+		   	ip = Math.floor(ip*10)/10; 
+		   	console.log(ip);
+		    
+		    $_y[j].innerText = ip;
+		    
+		    //console.log(y);
+		    console.log($_ArrK);
+		};	
+		   
+	$("#mwt_mwt_slider_scroll1").animate({ right:'-'+w+'px' }, 600 ,'swing');
+
+	h=document.getElementById("showRight1"); 
+	h.innerText='AUD' ;
+	console.log(h);
 	});
+
+	    
+		    	
 
 
 	$("#CNY").click(function() {
   	//alert( "人民幣 for .click() called." );
+  	
   	let rate = 0.2154;
 	let rate1 = rate*1.2;
   	x=document.getElementsByClassName("j_currency");  // Find the elements
 		    for(var i = 0; i < x.length; i++){
 		    	x[i].innerText='CNY';    // Change the content
+
 		    };
-	y=document.getElementsByClassName("j_price");  // Find the elements
+	/*y=document.getElementsByClassName("j_price");
   	console.log(y);
-		    for(var j = 0; j < y.length; j++){	
-		    	y[j].innerText *= rate1;    // Change the content
-		    	y[j].innerText = Math.floor(y[j].innerText*10)/10;
-		    };
+		    for(var j = 0; j < y.length; j++){
+		    var ArrK = new Array();	
+		    	ArrK = y[j].innerText;
+	console.log(ArrK);		    		    	 
+		    	  Object.freeze(ArrK);
+		    //var ip = new Array();
+		    console.log(ArrK);	*/   
+		    console.log($_ArrK); 
+		    	ip = $_ArrK;
+		 		console.log(ip);
+		    ip *= rate1;
+		    console.log(ip);
+		   	ip = Math.floor(ip*10)/10; 
+		   	console.log(ip);
+		    
+		    y[j].innerText = ip;
+		    
+		    console.log(y[j].innerText);
+		    console.log($_ArrK);
+		    /*};	*/
 	$("#mwt_mwt_slider_scroll1").animate({ right:'-'+w+'px' }, 600 ,'swing');
+
+	h=document.getElementById("showRight1"); 
+	h.innerText='CNY' ;
+	console.log(h);
 	});
 
 
@@ -86,6 +151,9 @@ $(function(){
 		    	y[j].innerText = Math.floor(y[j].innerText*10)/10;
 		    };
 	$("#mwt_mwt_slider_scroll1").animate({ right:'-'+w+'px' }, 600 ,'swing');
+	h=document.getElementById("showRight1"); 
+	h.innerText='EUR' ;
+	console.log(h);
 	});
 
 
@@ -105,6 +173,9 @@ $(function(){
 		    	y[j].innerText = Math.floor(y[j].innerText*10)/10;
 		    };
 	$("#mwt_mwt_slider_scroll1").animate({ right:'-'+w+'px' }, 600 ,'swing');
+	h=document.getElementById("showRight1"); 
+	h.innerText='GBP' ;
+	console.log(h);
 	});
 
 
@@ -123,6 +194,9 @@ $(function(){
 		    	y[j].innerText = Math.floor(y[j].innerText*10)/10;
 		    };
 	$("#mwt_mwt_slider_scroll1").animate({ right:'-'+w+'px' }, 600 ,'swing');
+	h=document.getElementById("showRight1"); 
+	h.innerText='HKD' ;
+	console.log(h);
 	});
 
 
@@ -141,6 +215,9 @@ $(function(){
 		    	y[j].innerText = Math.floor(y[j].innerText*10)/10;
 		    };
 	$("#mwt_mwt_slider_scroll1").animate({ right:'-'+w+'px' }, 600 ,'swing');
+	h=document.getElementById("showRight1"); 
+	h.innerText='IDR' ;
+	console.log(h);
 	});
 
 
@@ -159,6 +236,9 @@ $(function(){
 		    	y[j].innerText = Math.floor(y[j].innerText*10)/10;
 		    };
 	$("#mwt_mwt_slider_scroll1").animate({ right:'-'+w+'px' }, 600 ,'swing');
+	h=document.getElementById("showRight1"); 
+	h.innerText='JPY' ;
+	console.log(h);
 	});
 
 
@@ -177,6 +257,9 @@ $(function(){
 		    	y[j].innerText = Math.floor(y[j].innerText*10)/10;
 		    };
 	$("#mwt_mwt_slider_scroll1").animate({ right:'-'+w+'px' }, 600 ,'swing');
+	h=document.getElementById("showRight1"); 
+	h.innerText='KRW' ;
+	console.log(h);
 	});
 
 
@@ -195,6 +278,9 @@ $(function(){
 		    	y[j].innerText = Math.floor(y[j].innerText*10)/10;
 		    };
 	$("#mwt_mwt_slider_scroll1").animate({ right:'-'+w+'px' }, 600 ,'swing');
+	h=document.getElementById("showRight1"); 
+	h.innerText='MYR' ;
+	console.log(h);
 	});
 
 
@@ -213,6 +299,9 @@ $(function(){
 		    	y[j].innerText = Math.floor(y[j].innerText*10)/10;
 		    };
 	$("#mwt_mwt_slider_scroll1").animate({ right:'-'+w+'px' }, 600 ,'swing');
+	h=document.getElementById("showRight1"); 
+	h.innerText='PHP' ;
+	console.log(h);
 	});
 
 
@@ -231,6 +320,9 @@ $(function(){
 		    	y[j].innerText = Math.floor(y[j].innerText*10)/10;
 		    };
 	$("#mwt_mwt_slider_scroll1").animate({ right:'-'+w+'px' }, 600 ,'swing');
+	h=document.getElementById("showRight1"); 
+	h.innerText='SGD' ;
+	console.log(h);
 	});
 
 
@@ -249,13 +341,16 @@ $(function(){
 		    	y[j].innerText = Math.floor(y[j].innerText*10)/10;
 		    };
 	$("#mwt_mwt_slider_scroll1").animate({ right:'-'+w+'px' }, 600 ,'swing');
+	h=document.getElementById("showRight1"); 
+	h.innerText='THB' ;
+	console.log(h);
 	});
 
 
 	$("#TWD").click(function() {
   	//alert( "台幣 for .click() called." );
 	let rate = 1.0;
-	let rate1 = rate*1.2;
+	
 	x=document.getElementsByClassName("j_currency");  // Find the elements
 		    for(var i = 0; i < x.length; i++){
 		    	x[i].innerText='TWD';    // Change the content
@@ -263,10 +358,13 @@ $(function(){
 	y=document.getElementsByClassName("j_price");  // Find the elements
   	console.log(y);
 		    for(var j = 0; j < y.length; j++){	
-		    	y[j].innerText *= rate1;    // Change the content
+		    	y[j].innerText *= rate;    // Change the content
 		    	y[j].innerText = Math.floor(y[j].innerText*10)/10;
 		    };
 	$("#mwt_mwt_slider_scroll1").animate({ right:'-'+w+'px' }, 600 ,'swing');
+	h=document.getElementById("showRight1"); 
+	h.innerText='TWD' ;
+	console.log(h);
 	});
 
 
@@ -285,6 +383,9 @@ $(function(){
 		    	y[j].innerText = Math.floor(y[j].innerText*10)/10;
 		    };
 	$("#mwt_mwt_slider_scroll1").animate({ right:'-'+w+'px' }, 600 ,'swing');
+	h=document.getElementById("showRight1"); 
+	h.innerText='USD' ;
+	console.log(h);
 	});
 
 
@@ -303,6 +404,9 @@ $(function(){
 		    	y[j].innerText = Math.floor(y[j].innerText*10)/10;
 		    };
 	$("#mwt_mwt_slider_scroll1").animate({ right:'-'+w+'px' }, 600 ,'swing');
+	h=document.getElementById("showRight1"); 
+	h.innerText='VND' ;
+	console.log(h);
 	});
 
 });

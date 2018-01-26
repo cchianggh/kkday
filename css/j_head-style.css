@@ -63,7 +63,7 @@
 		background-color: #ccc;
 		width: 210px;
 		text-align: left;
-		margin-left: 28px;			
+		margin-left: 2px;			
 	}
 
 .menu-slider-right a{
@@ -75,15 +75,24 @@
 	}
 
 .menu-slider-right li{
-		margin-left: 30px;
+		margin-left: 2px;
 	}
 
 .menu-slider-right hr{
 		color: #888;
 	}
 #menu{
-		cursor:pointer; 
+		cursor:pointer; 		
 	}
+
+#menu span{
+		margin-left: 5px;		
+	}
+
+#showRight1{
+	font-family:sans-serif;
+}
+
 
 #block-layer{
 		position: absolute; 

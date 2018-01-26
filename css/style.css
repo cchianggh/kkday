@@ -80,16 +80,19 @@
 }
   .kksearch h2 {
     font-size: 1.7em;
-    margin: 20px 0;
+    margin: 15px 0;
+    margin-left: 20px; 
   }
   #search_experience_value {
     width: 90.5%;
     border: 0.5px solid rgb(214, 214, 214);
     height: 48px;
     margin: auto;
+    margin-left: 20px;
     float: left;
     border-top-left-radius: 5px;
     border-bottom-left-radius: 5px;
+    padding-left: 10px;
   }
   .search_mark {
     width: 48px;
@@ -99,17 +102,15 @@
     text-align: center;
     color: #fdfefe;
     font-size: 24px;
+    margin: auto;
     position: absolute;
     border-top-right-radius: 5px;
     border-bottom-right-radius: 5px;
+    
     float: right;
-    position: absolute;
-    right: 50px;
+    right: 40px;
   }
-  #search_experience_value {
-    padding-left: 10px;
-  }
-   ::-webkit-input-placeholder {
+  #search_experience_value::-webkit-input-placeholder {
     /* WebKit browsers */
     color: rgb(182, 182, 182);
     font-weight: bold;
