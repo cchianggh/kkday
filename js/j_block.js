@@ -19,8 +19,12 @@ function back1(){
 function back2(){ 
 	document.getElementById("block-layer1").style.visibility="hidden"; 
 	document.getElementById("j_forgot_pw").style.visibility="hidden"; 
-	//document.getElementById("block-layer").style.visibility="hidden"; 
-	//document.getElementById("register").style.visibility="hidden"; 
+}
+function show2(){ 
+	document.getElementById("hot2go").style.visibility="visible"; 	 
+} 
+function back3(){ 
+	document.getElementById("hot2go").style.visibility="hidden"; 
 }
 //*********************************************************************//
 			

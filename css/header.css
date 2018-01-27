@@ -21,7 +21,7 @@ header .logo{
 	width: 10%;
 	height: 100%;
 	background-image: url(../images/kkday_logo.png);
-	
+	float: left;
 	-webkit-background-size: contain;
 	background-size: contain;
 	background-repeat: no-repeat;
@@ -42,4 +42,35 @@ header .menu{
 	display: inline-block;
 	font-weight: 600;
 	font-size: 15px;
+}
+
+header .place2go{
+	width: 35%;
+	/*height: 40px;
+	line-height: 40px;*/
+	float:left;	
+	margin-top: 7px;
+	border: 1px solid #888;
+}	
+
+#place2go input{
+	width: 88%;
+	height: 46px;
+	line-height: 46px;
+	color: #000;
+	font-weight: 400;
+	font-size: 15px;
+	background-color: #fff;
+	border-radius: 3px;
+
+}
+
+#place2go span:nth-of-type(2){
+	height: 46px;
+	width: 46px;
+	background-color: #42dcf4;
+	color: #fff;
+	font-size: 16px;
+	font-weight: 600;
+	float: right;
 }

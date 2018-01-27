@@ -58,54 +58,21 @@ $(function(){
 		    	x[i].innerText='AUD';    // Change the content	    
 	};	
 
-	/*$_y=document.getElementsByClassName("j_price");
-  	console.log($_y);
-	    for(var j = 0; j < $_y.length; j++){
-	    	Object.freeze($_ArrK);
-	    	var $_ArrK = new Array();	
-	    	$_ArrK = $_y[j].innerText;
-	console.log($_ArrK);		    		    	 
-			
-	y=document.getElementsByClassName("j_price");
-	console.log($_ArrK);
-  	console.log(y);
-	    for(var j = 0; j < y.length; j++){
-	    	var ArrK = new Array();	
-	    	ArrK = y[j].innerText;
-	console.log(ArrK);		    		    	 
-			Object.freeze(ArrK);
-		var ip = new Array();
-
-	console.log(ArrK);	
-		 		var ip = new Array();
-		    	ip = ArrK;
-		 		console.log(ip);			 
-		    ip *= rate1;
-		    console.log(ip);
-		   	ip = Math.floor(ip*10)/10; 
-		   	console.log(ip);
-		    
-		    y[j].innerText = ip;
-		    
-		    //console.log(y);
-		    console.log(ArrK);
-		};	
-		}; */
 		$_y=document.getElementsByClassName("j_price-hd");
   	console.log($_y);
 	    	for(var j = 0; j < $_y.length; j++){
 	    		$_y_1=$_y[j].innerText;    		    			    	
 	    	
-	    	y=document.getElementsByClassName("j_price");
+	    y=document.getElementsByClassName("j_price");
   	console.log(y);
-	    		for(var j = 0; j < y.length; j++){
-	    			y_1 = y[j].innerText;
-	    		if(y_1!=$_y_1){
-	    			y[j].innerText=$_y[j].innerText;
-	    		};
-	    			y[j].innerText *= rate1;
-		    		y[j].innerText = Math.floor(y[j].innerText*10)/10;
-	    	};
+    		for(var j = 0; j < y.length; j++){
+    			y_1 = y[j].innerText;
+    		if(y_1!=$_y_1){
+    			y[j].innerText=$_y[j].innerText;
+    		};
+    			y[j].innerText *= rate1;
+	    		y[j].innerText = Math.floor(y[j].innerText*10)/10;
+    	};
 	    };
 
 	$("#mwt_mwt_slider_scroll1").animate({ right:'-'+w+'px' }, 600 ,'swing');
@@ -115,10 +82,7 @@ $(function(){
 	console.log(h);
 	});
 
-	    
-		    	
-
-
+	    		    	
 	$("#CNY").click(function() {
   	//alert( "人民幣 for .click() called." );
   	
@@ -127,31 +91,8 @@ $(function(){
   	x=document.getElementsByClassName("j_currency");  // Find the elements
 		    for(var i = 0; i < x.length; i++){
 		    	x[i].innerText='CNY';    // Change the content
-
 		    };
-	/*y=document.getElementsByClassName("j_price");
-  	console.log(y);
-	    for(var j = 0; j < y.length; j++){
-	    	var ArrK = new Array();	
-	    	ArrK = y[j].innerText;
-	console.log(ArrK);		    		    	 
-			Object.freeze(ArrK);
-		var ip = new Array();
-
-	console.log(ArrK);	
-		 		var ip = new Array();
-		    	ip = ArrK;
-		 		console.log(ip);			 
-		    ip *= rate1;
-		    console.log(ip);
-		   	ip = Math.floor(ip*10)/10; 
-		   	console.log(ip);
-		    
-		    y[j].innerText = ip;
-		    
-		    //console.log(y);
-		    console.log(ArrK);
-		};*/
+	
 		$_y=document.getElementsByClassName("j_price-hd");
   	console.log($_y);
 	    	for(var j = 0; j < $_y.length; j++){
@@ -512,7 +453,7 @@ $(function(){
 	    		if(y_1!=$_y_1){
 	    			y[j].innerText=$_y[j].innerText;
 	    		};
-	    			y[j].innerText *= rate1;
+	    			y[j].innerText *= rate;
 		    		y[j].innerText = Math.floor(y[j].innerText*10)/10;
 	    	};
 	    };
