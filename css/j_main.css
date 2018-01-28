@@ -45,6 +45,22 @@
 	overflow: hidden;
 }
 
+#j_kr1 .j_pix{
+	background-image: url(../images/1101.jpg);	
+}
+
+#j_kr2 .j_pix{
+	background-image: url(../images/1201.jpg);
+}
+
+#j_kr3 .j_pix{
+	background-image: url(../images/1301.png);
+}
+
+#j_kr4 .j_pix{
+	background-image: url(../images/1401.jpg);
+}
+
 #j_jp1 .j_pix{
 	background-image: url(../images/2101.png);	
 }
@@ -145,6 +161,7 @@
 }	
 .j_rating-no{
 	float: left;
+	display: inline-block;
 }
 
 .j_rating-no h5{

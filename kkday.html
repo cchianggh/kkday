@@ -1,8 +1,3 @@
-<?php 
-	require_once("connDB.php");	
-	$sql1 = "SELECT * FROM `members`" ;	
-	$result1 = mysqli_query($conn,$sql1);	
-?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -108,17 +103,7 @@
 				<li><h3>現在選擇國家</h3></li><hr>
 				<li><a href="en.html"><img src="images/tw1.png">台灣</a></li><hr>
 				<li><h3>所有國家</h3></li><hr>
-				<!--<li><a href="en.html"><img src="images/kk1.png">international</a></li><hr>
-				<li><a href="sp.html"><img src="images/sg1.png">Singapore</a></li><hr>
-				<li><a href="ประเทศไทย.html"><img src="images/th1.png">ประเทศไทย</a></li><hr>
-				<li><a href="vn.html"><img src="images/vn1.png">Việt Nam</a></li><hr>
-				<li><a href="pp.html"><img src="images/ph1.png">Philippines</a></li><hr>
-				<li><a href="대한민국.html"><img src="images/kr1.png">대한민국</a></li><hr>
-				<li><a href="hk.html"><img src="images/hk1.png">香港</a></li><hr>
-				<li><a href="in.html"><img src="images/id1.png">Indonesia</a></li><hr>
-				<li><a href="jp.html"><img src="images/jp1.png">日本</a></li><hr>
-				<li><a href="cn.html"><img src="images/cn1.png">中国</a></li><hr>
-				<li><a href="ms.html"><img src="images/my1.png">Malaysia</a></li><hr>-->
+				
 				<li><a href="https://www.kkday.com/en"><img src="images/kk1.png">international</a></li><hr>
 				<li><a href="https://www.kkday.com/en-sg/"><img src="images/sg1.png">Singapore</a></li><hr>
 				<li><a href="https://www.kkday.com/th"><img src="images/th1.png">ประเทศไทย</a></li><hr>
@@ -184,8 +169,8 @@
 						<h4 class="sub-title">探索更多熱門目的地</h4>
 						<div class="recommand-col">
 							<div class="col-4">
-								<h3><a href="journeySelect.html">大阪</a></h3>
-								<h4>149旅遊體驗</h4>
+								<a href="http://localhost/kkday/journeySelect.html"><h3>大阪</h3>
+								<h4>149旅遊體驗</h4></a>
 							</div>
 							<div class="col-4">
 								<h3>京都</h3>
@@ -221,91 +206,95 @@
 			</div>
 		</section>
 	</div>
+	
+	<section class="j_home-section  clearfix">
+			<div class="j_container">
+				<h2 class="j_title">韓國滑雪祭</h2>
+			</div>													
+				<div class="j_section-head j_clearfix">		
+					<div id="j_kr1" class="j_fixed-width j_col-4">
+								<div class="j_pix">
+									<!--<img src="images/101.jpg">-->
+								</div>
+								<div class="j_description j_clearfix">
+									<h3>【韓國超值新手滑雪】洪川大明維爾瓦第滑雪村一日遊</h3><br><i class="fa fa-fire" style="font-size:14px;color:gray; float:left"></i><div class="j_order-no"><h5>4K+已訂購</h5></div>
+									<i class="fa fa-map-marker" style="font-size:14px;color:gray; float:left"></i><h5>韓國 首爾,多個城市</h5>
+								</div>
+					
+						<div class="j_star">
+									<i class="fa fa-star" style="color:#42dcf4;" ></i>
+									<i class="fa fa-star" style="color:#42dcf4;" ></i>
+									<i class="fa fa-star" style="color:#42dcf4;" ></i>
+									<i class="fa fa-star" style="color:#42dcf4;" ></i>
+									<i class="fa fa-star" style="color:#42dcf4;" ></i>
+								</div>
+								<div class="j_rating-no"><h5>(484)</h5></div>
+								<div class="j_currency">TWD</div><div class="j_price"  name="j-price">937</div><div class="j_price-hd" style ="display:none">937</div>		
+					</div>			
+			
 
-	<section class="home-section full-width koreaBig">
-		<div class="container korea fixed-width">
-			<h2 class="title">韓國滑雪祭</h2>
-			<div class="col-4">
-				<img src="https://farm3.static.flickr.com/2312/2101133246_9abba9da51_c.jpg" alt="">
-				<h4>【韓國超值新手滑雪】洪川大明維爾瓦第滑雪村一日遊</h4>
-				<div class="orderIcon fa fa-firefox"></div>
-				<h5 class="orders">4K+已訂購</h5>
-				<div class="orderIcon2 fa fa-map-marker"></div>
-				<h5>韓國 首爾,多個城市</h5>
-				<div>
-					<div class="starContainer">
-						<div class="fa fa-star"></div>
-						<div class="fa fa-star"></div>
-						<div class="fa fa-star"></div>
-						<div class="fa fa-star"></div>
-						<div class="fa fa-star"></div>
-					</div>
-					<div class="j_rating-no"><h5>(484)</h5></div>
-					<div class="j_currency">TWD</div>
-						<div class="j_price">937</div><div class="j_price-hd" style ="display:none">937</div>				
-				</div>
-			</div>	
-
-			<div class="col-4">
-				<img src="https://farm6.static.flickr.com/5284/5354686357_c687f806b1_c.jpg" alt="">
-				<h4>【入門/進階教學全都包】韓國橡樹谷OakValley滑雪場一日遊</h4>
-				<div class="orderIcon fa fa-firefox"></div>
-				<h5>933已訂購</h5>
-				<div class="orderIcon2 fa fa-map-marker"></div>
-				<h5>韓國 江原道,多個城市</h5>
-				<div class="starContainer">
-					<div class="fa fa-star"></div>
-					<div class="fa fa-star"></div>
-					<div class="fa fa-star"></div>
-					<div class="fa fa-star"></div>
-					<div class="fa fa-star"></div>
-				</div>
-				<div class="j_rating-no"><h5>(168)</h5></div>
-				<div class="j_currency" name="j_currency" >TWD</div>
-					<div class="j_price">807</div><div class="j_price-hd" style ="display:none">807</div>
+			<div id="j_kr2" class="j_fixed-width j_col-4">
+						<div class="j_pix">
+							<!--<img src="images/101.jpg">-->
+						</div>
+						<div class="j_description j_clearfix">
+							<h3>【入門/進階教學全都包】韓國橡樹谷OakValley滑雪場一日遊</h3><br><i class="fa fa-fire" style="font-size:14px;color:gray; float:left"></i><div class="j_order-no"><h5>933已訂購</h5></div>
+							<i class="fa fa-map-marker" style="font-size:14px;color:gray; float:left"></i><h5>韓國 江原道,多個城市</h5>
+						</div>
+			
+				<div class="j_star">
+							<i class="fa fa-star" style="color:#42dcf4;" ></i>
+							<i class="fa fa-star" style="color:#42dcf4;" ></i>
+							<i class="fa fa-star" style="color:#42dcf4;" ></i>
+							<i class="fa fa-star" style="color:#42dcf4;" ></i>
+							<i class="fa fa-star" style="color:#42dcf4;" ></i>
+						</div>
+						<div class="j_rating-no"><h5>(168)</h5></div>
+						<div class="j_currency">TWD</div><div class="j_price"  name="j-price">807</div><div class="j_price-hd" style ="display:none">807</div>
 				
 			</div>
-			<div class="col-4">
-				<img src="https://farm3.static.flickr.com/2036/2100364237_af00f593c2_c.jpg" alt="">
-				<h4>【韓國歐巴教你滑雪】江原道伊利希安江村滑雪一日遊</h4>
-				<div class="orderIcon fa fa-firefox"></div>
-				<h5>437已訂購</h5>
-				<div class="orderIcon2 fa fa-map-marker"></div>
-				<h5>韓國 首爾,多個城市</h5>
-				<div class="starContainer clearfix">
-					<div class="fa fa-star"></div>
-					<div class="fa fa-star"></div>
-					<div class="fa fa-star"></div>
-					<div class="fa fa-star"></div>
-					<div class="fa fa-star"></div>
-				</div>
-				<div class="j_rating-no"><h5>(143)</h5></div>
-				<div class="j_currency">TWD</div>
-					<div class="j_price">834</div><div class="j_price-hd" style ="display:none">834</div>
-				
+			
+			<div id="j_kr3" class="j_fixed-width j_col-4">
+						<div class="j_pix">
+							<!--<img src="images/101.jpg">-->
+						</div>
+						<div class="j_description j_clearfix">
+							<h3>【韓國歐巴教你滑雪】江原道伊利希安江村滑雪一日遊</h3><br><i class="fa fa-fire" style="font-size:14px;color:gray; float:left"></i><div class="j_order-no"><h5>437已訂購</h5></div>
+							<i class="fa fa-map-marker" style="font-size:14px;color:gray; float:left"></i><h5>韓國 首爾,多個城市</h5>
+						</div>
+			
+				<div class="j_star">
+							<i class="fa fa-star" style="color:#42dcf4;" ></i>
+							<i class="fa fa-star" style="color:#42dcf4;" ></i>
+							<i class="fa fa-star" style="color:#42dcf4;" ></i>
+							<i class="fa fa-star" style="color:#42dcf4;" ></i>
+							<i class="fa fa-star" style="color:#42dcf4;" ></i>
+						</div>
+						<div class="j_rating-no"><h5>((143)</h5></div>
+						<div class="j_currency">TWD</div><div class="j_price"  name="j-price">834</div><div class="j_price-hd" style ="display:none">834</div>								
 			</div>
-			<div class="col-4">
-				<img src="https://farm5.static.flickr.com/4638/27365051949_1d82c0096e_c.jpg" alt="">
-				<h4>【韓國滑雪入門】伊利西安滑雪場，最適合新手的基礎滑雪團</h4>
-				<div class="orderIcon fa fa-firefox"></div>
-				<h5>751已訂購</h5>
-				<div class="orderIcon2 fa fa-map-marker"></div>
-				<h5>韓國 首爾,多個城市</h5>
-				<div class="starContainer">
-					<div class="fa fa-star"></div>
-					<div class="fa fa-star"></div>
-					<div class="fa fa-star"></div>
-					<div class="fa fa-star"></div>
-					<div class="fa fa-star grey"></div>
-				</div>
-				<div class="j_rating-no"><h5>(115)</h5></div>
-				<div class="j_currency">TWD</div>
-					<div class="j_price">973</div><div class="j_price-hd" style ="display:none">973</div>
-				
+			<div id="j_kr4" class="j_fixed-width j_col-4">
+						<div class="j_pix">
+							<!--<img src="images/101.jpg">-->
+						</div>
+						<div class="j_description j_clearfix">
+							<h3>【韓國滑雪入門】伊利西安滑雪場，最適合新手的基礎滑雪團</h3><br><i class="fa fa-fire" style="font-size:14px;color:gray; float:left"></i><div class="j_order-no"><h5>751已訂購</h5></div>
+							<i class="fa fa-map-marker" style="font-size:14px;color:gray; float:left"></i><h5>韓國 首爾,多個城市</h5>
+						</div>
+			
+				<div class="j_star">
+							<i class="fa fa-star" style="color:#42dcf4;" ></i>
+							<i class="fa fa-star" style="color:#42dcf4;" ></i>
+							<i class="fa fa-star" style="color:#42dcf4;" ></i>
+							<i class="fa fa-star" style="color:#42dcf4;" ></i>
+							<i class="fa fa-star" style="color:#42dcf4;" ></i>
+						</div>
+						<div class="j_rating-no"><h5>(115)</h5></div>
+						<div class="j_currency">TWD</div><div class="j_price"  name="j-price">973</div><div class="j_price-hd" style ="display:none">973</div>			
 			</div>
 		</div>
 	</section>
-
+	<div  class="clearfix"></div>
 	<section class="j_home-section">
 			<div class="j_container">
 				<h2 class="j_title">日本賞雪趣</h2>

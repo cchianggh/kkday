@@ -94,24 +94,29 @@
     display: none;
   }
   .welcome-page-action {
-    position: relative;
+
   }
   .welcome-page {
+    width: 100%;
+    position: relative;
+    
+  }
+  .kksearch {
     width: 60%;
     border: 1px solid transparent;
     border-radius: 10px;
     background-color: #effeff;
-    margin: auto;
     height: 133.8px;
-    position: relative;
-  }
-  .kksearch {
     color: #138184;
-    margin-left: 35px;
+    position: absolute;
+    left: 250px;
+    bottom: 20px;
+
   }
   .kksearch h2 {
     font-size: 1.7em;
     margin: 20px 0;
+    margin-left: 35px;
   }
   #search_experience_value {
     width: 90.5%;
