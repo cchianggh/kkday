@@ -44,12 +44,20 @@ $(function() {
   });
   
   $("#slider-range").slider({
+       // Change the content         
     range: true,
     min: 0,
     max: 20000,
     values: [80, 12000],
+    /*var m = $(".j_currency").innerText,
+    if($(".j_currency").innerText() == 'AUD'){
+      let rate = 0.0420;
+      let rate1 = rate*1.2;
+      values *= rate1;
+    }; */
     slide: function(event, ui) {
       $("#amount").val("$" + ui.values[0] + " ~ $" + ui.values[1]);
+
     }
   });
   $("#amount").val(

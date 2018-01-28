@@ -147,10 +147,10 @@
 		/*display: none;*/
 		border-radius: 10px;
 	} 
-#hot2go h4{
+#hot2go h6{
 	font-size: 18px;
 	font-weight: 600;
-	margin-left: 15px;
+	margin-left: 25px;
 }
 #hot2go .j_hot-place{
 	float: left;
@@ -159,6 +159,19 @@
 }
 .j_hot-place .j_goto{
 	margin-left: 15px;
+}
+
+.j_goto a{
+	color:#000;
+	font-size: 14px;
+}
+
+.j_goto span{
+	margin-left: 10px;
+}
+.hot{
+	color: #f77178;
+	font-size: 14px;
 }
 
 #forgot_span {
