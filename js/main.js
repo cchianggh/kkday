@@ -10,14 +10,14 @@ $(function() {
         breakpoint: 990,
         settings: {
           slidesToShow: 2,
-          slidesToScroll: 2
+          slidesToScroll: 2,
         }
       },
       {
-        breakpoint: 480,
+        breakpoint: 759,
         settings: {
           slidesToShow: 1,
-          slidesToScroll: 1
+          slidesToScroll: 1,
         }
       }
       // You can unslick at a given breakpoint now by adding:
@@ -25,17 +25,17 @@ $(function() {
       // instead of a settings object
     ]
   });
-  $(".slick-next").click(function() {
-    $(".slick-next").addClass("opacity-0");
-    $(".slick-prev").removeClass("opacity-0");
-  });
-  $(".slick-prev").click(function() {
-    $(".slick-prev").addClass("opacity-0");
-    $(".slick-next").removeClass("opacity-0");
-  });
-  $(".allCityCon").click(function() {
-    $(".allCity .dropdown").slideToggle();
-  });
+  // $(".slick-next").click(function() {
+  //   $(".slick-next").addClass("opacity-0");
+  //   $(".slick-prev").removeClass("opacity-0");
+  // });
+  // $(".slick-prev").click(function() {
+  //   $(".slick-prev").addClass("opacity-0");
+  //   $(".slick-next").removeClass("opacity-0");
+  // });
+  // $(".allCityCon").click(function() {
+  //   $(".allCity .dropdown").slideToggle();
+  // });
 
   $("#thedate").datepicker({
     dateFormat: "yy-mm-dd",
