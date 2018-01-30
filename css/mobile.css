@@ -58,7 +58,7 @@
     margin: 0px;
   }
   .col-4 {
-    width: calc(100% / 4 - 20px);
+    width: calc(100% / 2 - 20px);
     float: left;
     margin: 0 10px;
     max-width: 21.3% !important;
@@ -221,7 +221,7 @@
     cursor: pointer;
     
   }
-  .recommand-city .col-4::after {
+  /*.recommand-city .col-4::after {
     content: "";
     display: block;
     height: 25%;
@@ -229,7 +229,7 @@
     background-color: rgba(0, 0, 0, 1);
     position: relative;
     z-index: 100;
-  }
+  }*/
   .recommand-city .col-4::after {
     content: "";
     display: block;
@@ -262,52 +262,54 @@
   /*.link-second-container{
     overflow: hidden;
   }*/
-  /*.recommand-city .col-4:nth-of-type(1) {*/
-    .recommand-col-1:nth-of-type(1) {
+  .recommand-city .col-4:nth-of-type(1) {
+   /* .recommand-col-1:nth-of-type(1) {*/
     background-image: url(https://farm3.static.flickr.com/2903/33072008974_43670a111d_c.jpg);
     background-size: cover;
     background-position: center;
   }
-  /*.recommand-city .col-4:nth-of-type(2) {*/
-    .recommand-col-1:nth-of-type(2) {
+  .recommand-city .col-4:nth-of-type(2) {
+  /*  .recommand-col-1:nth-of-type(2) {*/
     background-image: url(https://farm5.static.flickr.com/4560/24869897598_2fa4719020_c.jpg);
     background-size: cover;
     background-position: center;
   }
-  /*.recommand-city .col-4:nth-of-type(3) {*/
-    .recommand-col-2:nth-of-type(1) {
+  .recommand-city .col-4:nth-of-type(3) {
+   /* .recommand-col-2:nth-of-type(1) {*/
     background-image: url(https://farm5.static.flickr.com/4063/35218628000_d9bf6c24e8_c.jpg);
     background-size: cover;
     background-position: center;
     clear: left;
 
   }
-  /*.recommand-city .col-4:nth-of-type(4) {*/
-    .recommand-col-2:nth-of-type(2) {
+  .recommand-city .col-4:nth-of-type(4) {
+   /* .recommand-col-2:nth-of-type(2) {*/
     background-image: url(https://farm4.static.flickr.com/3772/11308035054_f60d85410e_c.jpg);
     background-size: cover;
     background-position: center;
   }
-  /*.recommand-city .col-4:nth-of-type(5) {*/
-  .recommand-col-3:nth-of-type(1) {
+  .recommand-city .col-4:nth-of-type(5) {
+  /*.recommand-col-3:nth-of-type(1) {*/
     background-image: url(https://farm6.static.flickr.com/5564/14436078594_26b10078f2_c.jpg);
     background-size: cover;
     background-position: center;
+    clear: left;
   }
-  /*.recommand-city .col-4:nth-of-type(6) {*/
-    .recommand-col-3:nth-of-type(2) {
+  .recommand-city .col-4:nth-of-type(6) {
+   /* .recommand-col-3:nth-of-type(2) {*/
     background-image: url(https://visualhunt.com/photos/l/7/hotel-balcony-palm-tree-window.jpg);
     background-size: cover;
     background-position: center;
   }
-  /*.recommand-city .col-4:nth-of-type(7) {*/
-    .recommand-col-4:nth-of-type(1) {
+  .recommand-city .col-4:nth-of-type(7) {
+  /*  .recommand-col-4:nth-of-type(1) {*/
     background-image: url(https://farm2.static.flickr.com/1662/25885247353_e4c9c2cf27_c.jpg);
     background-size: cover;
     background-position: center;
+    clear: left;
   }
-  /*.recommand-city .col-4:nth-of-type(8) {*/
-    .recommand-col-4:nth-of-type(2) {
+  .recommand-city .col-4:nth-of-type(8) {
+  /*  .recommand-col-4:nth-of-type(2) {*/
     background-image: url(https://visualhunt.com/photos/l/7/bridging-builds-cathedral-city.jpg);
     background-size: cover;
     background-position: center;
@@ -996,9 +998,5 @@
     font-size: 1.2em;
     color: #4fc9d2;
   }
-  .fuckyou {
-    height: 1000px;
-    width: 100%;
-    background-color: #f00;
-  }
+  
 }

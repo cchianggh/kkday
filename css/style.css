@@ -179,7 +179,7 @@
     width: 100%;
     height: 100%;
   }
-  .recommand-city .col-4::after {
+  /*.recommand-city .col-4::after {
     content: "";
     display: block;
     height: 25%;
@@ -187,7 +187,7 @@
     background-color: rgba(0, 0, 0, 1);
     position: relative;
     z-index: 100;
-  }
+  }*/
   .recommand-city .col-4::after {
     content: "";
     display: block;
